@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.block {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.block2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    background-color: gray;
+  opacity: 0.5;
+}
+p {
+  display: inline-block;
+  font-size: 60px;
+  font-family: 'Great Vibes', cursive;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.block-one {
+  background-image: url("./images/1.jpg");
+  color: #fff;
+  z-index: 100;
+  background-size: cover;
+}
+.block-two {
+  background-image: url("./images/8.png");
+  z-index: 200;
+  background-size: cover;
+}
+.block-three {
+  background-image: url("./images/9.png");
+  z-index: 300;
+  background-size: cover;
+}
+.block-four {
+  background-image: url("./images/12.png");
+  z-index: 300;
+  background-size: cover;
+}
+.block-six {
+  background-image: url("./images/14.JPG");
+  z-index: 600;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#keyvisual {
+  /* width: 100%;
+  height: 800px; */
+  background-image: url("./images/4.jpg");
+  z-index: 500;
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+  background-position: center;  
 }

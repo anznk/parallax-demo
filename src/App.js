@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  useEffect(() => {
+        window.addEventListener('scroll', () => {
+      let elem = document.getElementById('keyvisual');
+      let scrollY = window.scrollY/10;
+      elem.style.backgroundSize = scrollY + '%';
+    });
+    return () => {
+
+
+      
+    }
+  }, [])
+
+  return(
+    <div>
+      <body>
+        <div className="block block-one">
+          <p>One</p>
+        </div>
+        <div className="block2 block-two">
+          <p>Two</p>
+        </div>
+        <div className="block block-three">
+          <p>Three</p>
+        </div>
+        <div className="block block-four">
+          <p>Four</p>
+        </div>
+        <div id="keyvisual" className="block block-five">
+          <p>Five</p>
+        </div>
+        <div className="block block-six">
+          <p>Six</p>
+        </div>
+      </body>
     </div>
-  );
+
+  )
 }
 
 export default App;
+
+
